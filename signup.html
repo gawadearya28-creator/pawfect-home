@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawfect Home - Pet Adoption Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+     background-color: #eef5ca;
+    margin:0;
+    padding:40px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#ff6b35;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:20px;
+}
+
+.checkbox input{
+    width:auto;
+    margin-top:4px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:#ff6b35;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#e85a2a;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>🐾 Pet Adoption Application</h1>
+<p>Fill out the form below to adopt your new furry friend.</p>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<label>Age</label>
+<input type="number" placeholder="Enter your age" required>
+
+<label>City</label>
+<input type="text" placeholder="Enter your city">
+
+<label>Full Address</label>
+<textarea rows="3" placeholder="Enter your address"></textarea>
+
+<label>Pet Type</label>
+<select>
+    <option>Dog</option>
+    <option>Cat</option>
+    <option>Bird</option>
+    <option>Rabbit</option>
+    <option>Other</option>
+</select>
+
+<label>Preferred Pet Age</label>
+<select>
+    <option>Puppy / Kitten</option>
+    <option>Young</option>
+    <option>Adult</option>
+    <option>Senior</option>
+</select>
+
+<label>Home Type</label>
+<select>
+    <option>House</option>
+    <option>Apartment</option>
+</select>
+
+<label>Have you owned pets before?</label>
+<select>
+    <option>Yes</option>
+    <option>No</option>
+</select>
+
+<label>Do you currently have any pets?</label>
+<select>
+    <option>Yes</option>
+    <option>No</option>
+</select>
+
+<label>Why do you want to adopt a pet?</label>
+<textarea rows="4" placeholder="Tell us why you want to adopt a pet"></textarea>
+
+<label>Who will be the primary caregiver?</label>
+<input type="text" placeholder="Name of caregiver">
+
+<div class="checkbox">
+    <input type="checkbox" required>
+    <span>
+        I agree to provide proper care, food, shelter, and medical attention to the adopted pet.
+    </span>
+</div>
+
+<button type="submit">Submit Adoption Request</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

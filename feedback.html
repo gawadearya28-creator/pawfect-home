@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pawfect Home - Feedback Form</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+     background-color: #eef5ca;
+    
+    justify-content:center;
+    align-items:center;
+    
+}
+nav {
+            background-color: #eea812;
+            border-bottom: 1px solid #6d4304;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 55px;
+        }
+        nav a {
+            color: rgb(17, 5, 83);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(240, 31, 4, 0.863);
+            color: #000000;
+            border-radius: 5px;
+        }
+
+.feedback-container{
+    background:white;
+    width:400px;
+    padding: 20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    margin:30px auto;
+
+}
+
+h2{
+    text-align:center;
+    color:#ff6b35;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:#ff6b35;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#e85a2a;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="petsforadopation.html">pats for adoption</a>
+        <a href="list.html">List your pet</a>
+        <a href="successstory.html">success stories</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">feedback</a>
+    </nav>
+
+<div class="feedback-container">
+
+    <h2>🐾 Feedback Form</h2>
+    <p>We would love to hear your thoughts about Pawfect Home!</p>
+
+    <form>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="rating">Rate Your Experience</label>
+        <select id="rating" required>
+            <option value="">Select Rating</option>
+            <option>⭐⭐⭐⭐⭐ Excellent</option>
+            <option>⭐⭐⭐⭐ Good</option>
+            <option>⭐⭐⭐ Average</option>
+            <option>⭐⭐ Poor</option>
+            <option>⭐ Very Poor</option>
+        </select>
+
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" rows="4" placeholder="Share your feedback..." required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
